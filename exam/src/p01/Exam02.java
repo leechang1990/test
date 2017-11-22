@@ -26,7 +26,16 @@ public class Exam02 {
 			result= a / b ;
 		
 		}
+		else if(op.equals("%")) {
+			result= a % b ;
+		
+		}
+		else {
+			System.out.println("잘못된 입력");
+			System.exit(0);
+		}
 		System.out.println("result=" +result);
+		s.close();
 	}
 }
 
