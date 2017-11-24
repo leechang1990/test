@@ -17,6 +17,8 @@ public class Test {
 	
 	
 	public static void main(String[] args) {
+		ObjectExam oe =new ObjectExam();
+		
 		Test t = new Test("가나다abc123");
 		//String str ="나 여나깄어요~~나";		
 		t.print();
