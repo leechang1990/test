@@ -3,12 +3,12 @@ package p03;
 import java.util.Scanner;
 
 public class ObjectExam {
-	int num1;//멤버변수 
-	int num2;
+	public int num1;//멤버변수 
+	public int num2;
 	
-	ObjectExam(){//생성자 new라는 연산자와함께 주소값을 할당해줌 
+	public ObjectExam(){//생성자 new라는 연산자와함께 주소값을 할당해줌 
 				//메모리를 생성할때만 호출 가능  파라메터 가능  변수 초기화가능 출력가능
-		System.out.println("기본 생성자를 호출 하셨군요!");
+	//	System.out.println("기본 생성자를 호출 하셨군요!");
 	}
 	
 	void add(int num1, int num2) {
@@ -20,7 +20,7 @@ public class ObjectExam {
 		return num2;
 	}
 	
-	void inputNums() {
+	public void inputNums() {
 		
 		Scanner s = new Scanner(System.in);//이것도 생성자 
 		System.out.println("첫번째 숫자를 입력해주세요: ");
@@ -30,7 +30,7 @@ public class ObjectExam {
 		s.close();
 	}
 	
-	void printLoop() {
+	public void printLoop() {
 		
 		for(int i=num1; i<num2; i++) {
 			System.out.print(i);
@@ -44,6 +44,13 @@ public class ObjectExam {
 	int add() {
 		return num1+num2;
 	}
+	public void swap() {
+		int swap;
+		swap=num1;
+		num1=num2;
+		num2=swap;
+		
+	}
 
 	
 	
@@ -54,7 +61,7 @@ public class ObjectExam {
 								//얜 무조건 호출해야함 
 								//아무것도 없는 생성자를 기본 생성자라 한다.
 		o.inputNums();
-		o.printLoop();
+		//o.printLoop();
 		
 	}
 

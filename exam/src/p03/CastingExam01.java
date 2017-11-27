@@ -10,13 +10,13 @@ public class CastingExam01 {
 		System.out.println("더블타입 d="+d);
 		System.out.println("인트타입 i="+i);
 		
-		int i2 = 123;
-		double d2 = i2;
+	//	int i2 = 123;
+//		double d2 = i2;
 		
-		long l = 1234;
-		int i3 = (int)l;
+	//	long l = 1234;
+//		int i3 = (int)l;
 		
-		int i4= 1234;
-		long l2= i4;			
+	//	int i4= 1234;
+//		long l2= i4;			
 	}
 }

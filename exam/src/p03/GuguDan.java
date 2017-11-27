@@ -2,11 +2,11 @@ package p03;
 
 public class GuguDan {
 
-	void printLoop(ObjectExam oe) {
+	public void printLoop(ObjectExam oe) {
 		
-		for(int i=oe.num1; i<=9; i++) {
+		for(int i=1; i<=oe.num1; i++) {
 			
-			for(int j = oe.num2; j<=9; j++) {
+			for(int j = 1; j<=oe.num2; j++) {
 				
 			System.out.print("[" + j+ ","+ i+"]");
 			

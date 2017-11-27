@@ -17,5 +17,6 @@ public class LoopExam {
 			System.out.println(i + "입니다");
 		}
 		System.out.println("minNum:" + minNum + "\nmaxNum:" + maxNum);
+		scan.close();
 	}
 }

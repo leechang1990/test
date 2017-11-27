@@ -6,6 +6,7 @@ public class Operator {
 	 * @param args
 	 */
 	public static void main(String[]args) {
+		
 		int a=4;
 		int b=a;
 		int c=b;
@@ -15,6 +16,7 @@ public class Operator {
 		
 		if(a==b) {
 			System.out.println("a와 b는 같습니다");
+			
 		}
 		
 		System.out.printf("%d, %d, %d \n",a,b,c);
