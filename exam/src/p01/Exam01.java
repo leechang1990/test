@@ -7,7 +7,7 @@ public class Exam01 {
 		
 		int a =3;
 		int b =4;
-	
+	//aa
 	
 		
 		System.out.println(a*b);
