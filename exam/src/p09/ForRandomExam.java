@@ -7,14 +7,12 @@ public class ForRandomExam {
 	void initTemp(int[] tempArr) {
 		Random rd= new Random();
 		for(int i=0; i<tempArr.length; i++) {
-			tempArr[i]=rd.nextInt(20)+1;
+			tempArr[i]=rd.nextInt(40)+1;
 			for(int j=i-1 ; j>=0; j--) {
 				if(tempArr[i]==tempArr[j]) {
 					i--;
 				}
-				
 			}
-			
 		}
 	}
 	
@@ -39,8 +37,11 @@ public class ForRandomExam {
 	void finalInit(int[] tempArr,int[][] numsArr) {
 		
 		for(int i=0; i<tempArr.length; i++) {
-			numsArr[i/numsArr.length]
-					[i%numsArr.length]=tempArr[i];
+			int idx1 = i/numsArr.length;
+			idx1 = i/numsArr[idx1].length;
+			int idx2 = i%numsArr[idx1].length;
+			numsArr[idx1]
+					[idx2]=tempArr[i];
 		}
 	}
 	
@@ -56,17 +57,18 @@ public class ForRandomExam {
 	
 	public static void main(String[] args) {
 		
-		int[][] numsArr = new int[3][3];
+		int[][] numsArr = new int[3][];
+		numsArr[0] = new int[3];
+		numsArr[1] = new int[4];
+		numsArr[2] = new int[2];
 		int[] tempArr= new int[9];
 		
 		ForRandomExam fre = new ForRandomExam();
 		
 		fre.initTemp(tempArr);
 		fre.downNums(tempArr);
-		
 		fre.finalInit(tempArr, numsArr);
-		fre.print(numsArr);
+		fre.print(numsArr);	
 		
 	}
-	
 }
