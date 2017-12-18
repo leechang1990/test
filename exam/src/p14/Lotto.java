@@ -38,10 +38,12 @@ public class Lotto {
 			}
 		}return nums;	
 	}
+	
 	public int[] active() {
 		int[] nums= new int[6];
 		return nums;
 	}
+	
 	public static void main(String[] args) {
 		
 		Lotto lo = new Lotto();
