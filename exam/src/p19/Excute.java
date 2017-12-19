@@ -21,11 +21,10 @@ public class Excute {
 			for(HashMap<String,Object> user: userList) {
 				System.out.println(user);
 			}
-			
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
+
 			e.printStackTrace();
 		}
 	}

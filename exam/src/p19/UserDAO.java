@@ -31,6 +31,7 @@ public class UserDAO {
 		String sql = "select *from user_info";
 		PreparedStatement ps = con.prepareStatement(sql);
 		ResultSet rs = ps.executeQuery();
+		
 		while(rs.next()) {
 			HashMap<String,Object> hm = new HashMap<String,Object>();
 			hm.put("uiid", rs.getString("uiid"));
@@ -44,7 +45,9 @@ public class UserDAO {
 		String sql = "insert into user_info(uiname, uiage, uiid, uipwd"+
 					"address, cino , uiregdate)\r\n"+
 					"values(?,?,?,?,?,1,now())";
+		
 		PreparedStatement ps = con.prepareStatement(sql);
+		
 		ps.setString(1, (String)hm.get("uiname"));
 		ps.setInt(2, (Integer)hm.get("uiage"));
 		ps.setString(3,(String)hm.get("uiid"));
